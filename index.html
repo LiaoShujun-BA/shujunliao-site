@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIAO SHUJUN · 廖淑君 | 个人主页</title>
+<meta name="description" content="廖淑君 LIAO SHUJUN · 香港大学商业分析（AI 方向）硕士 · 个人主页">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Noto+Serif+SC:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['Fraunces', 'Noto Serif SC', 'serif'],
+          sans:    ['Inter', 'Noto Sans SC', 'sans-serif'],
+        },
+        colors: {
+          brand: { 50:'#f2f6ee',100:'#e2ecd9',200:'#c1d5b0',300:'#9dbc86',400:'#7aa15f',500:'#5c8a44',600:'#456f31',700:'#365828',800:'#2b471f',900:'#213717' },
+          accent: { 300:'#d9b892',400:'#c69670',500:'#a97a51',600:'#8b5e3b',700:'#6b4527' },
+          paper: { 50:'#fbf8f1',100:'#f5efe3',200:'#ece3ce',300:'#dcccae',400:'#c3ac83' },
+          ink: { 700:'#4b4433',800:'#37311f',900:'#241f10' }
+        },
+        boxShadow: {
+          soft:'0 20px 40px -20px rgba(54,88,40,0.2), 0 8px 16px -8px rgba(107,69,39,0.12)',
+          glow:'0 0 40px rgba(122,161,95,0.25)',
+          paper:'0 1px 0 rgba(0,0,0,0.02), 0 12px 30px -10px rgba(54,88,40,0.15)',
+        },
+        animation: {
+          'gradient-x':'gradient-x 12s ease infinite',
+          'float':'float 8s ease-in-out infinite',
+          'blob':'blob 22s ease-in-out infinite',
+          'shine':'shine 4s linear infinite',
+        },
+        keyframes: {
+          'gradient-x':{'0%,100%':{'background-position':'0% 50%'},'50%':{'background-position':'100% 50%'}},
+          float:{'0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-10px)'}},
+          blob:{'0%,100%':{transform:'translate(0,0) scale(1)'},'33%':{transform:'translate(20px,-25px) scale(1.05)'},'66%':{transform:'translate(-15px,15px) scale(0.98)'}},
+          shine:{'0%':{'background-position':'-200% 0'},'100%':{'background-position':'200% 0'}},
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    background:
+      radial-gradient(1200px 500px at 10% -10%, rgba(122,161,95,0.10), transparent 60%),
+      radial-gradient(900px 500px at 90% 10%, rgba(169,122,81,0.10), transparent 60%),
+      radial-gradient(700px 500px at 50% 100%, rgba(214,178,145,0.10), transparent 60%),
+      repeating-linear-gradient(90deg, rgba(107,69,39,0.02) 0 1px, transparent 1px 6px),
+      #fbf7ee;
+    background-attachment: fixed;
+    color: #2d3624;
+    overflow-x: hidden;
+  }
+  .font-display { font-family:'Fraunces','Noto Serif SC',serif; letter-spacing:-0.01em; font-optical-sizing:auto; font-variation-settings:"SOFT" 40, "WONK" 0; }
+
+  /* 深色→木森调 覆盖 */
+  .text-white { color:#1f2b17 !important; }
+  .text-slate-300 { color:#4d5642 !important; }
+  .text-slate-400 { color:#6b7561 !important; }
+  .text-slate-500 { color:#8a9184 !important; }
+  .text-emerald-300, .text-emerald-400 { color:#456f31 !important; }
+  .text-pink-300 { color:#a97a51 !important; }
+  .text-pink-400 { color:#8b5e3b !important; }
+  .text-yellow-400 { color:#c69670 !important; }
+  .text-brand-300 { color:#365828 !important; }
+  .text-brand-400 { color:#456f31 !important; }
+  .text-accent-400 { color:#8b5e3b !important; }
+  .text-accent-500 { color:#6b4527 !important; }
+  .marker\:text-brand-400 li::marker { color:#7aa15f !important; }
+  .marker\:text-accent-400 li::marker { color:#c69670 !important; }
+  .marker\:text-pink-300 li::marker { color:#a97a51 !important; }
+
+  .glass {
+    background: rgba(255,253,247,0.75);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(107,69,39,0.12);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.7) inset, 0 8px 24px -12px rgba(54,88,40,0.15);
+  }
+  .glass-strong {
+    background: rgba(255,253,247,0.92);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(107,69,39,0.16);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset, 0 20px 40px -20px rgba(54,88,40,0.18);
+  }
+  .gradient-text {
+    background: linear-gradient(120deg,#365828 0%,#5c8a44 40%,#8b5e3b 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: gradient-x 12s ease infinite;
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(107,69,39,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(107,69,39,0.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse at center,#000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center,#000 30%, transparent 75%);
+  }
+  .fixed .blur-3xl { opacity: 0.55; }
+  .card-hover { transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s, border-color .35s; }
+  .card-hover:hover { transform: translateY(-4px); border-color: rgba(122,161,95,0.55); box-shadow: 0 30px 60px -20px rgba(54,88,40,0.18); }
+  .chip {
+    display:inline-flex; align-items:center; gap:.4rem;
+    padding:.35rem .75rem; border-radius:999px;
+    background: rgba(122,161,95,0.10);
+    border: 1px solid rgba(69,111,49,0.25);
+    font-size:.8rem; color:#365828;
+    font-weight: 500;
+  }
+  .chip .dot { width:6px; height:6px; border-radius:999px; background:#5c8a44; box-shadow:0 0 8px rgba(122,161,95,0.6); }
+  .section-title {
+    display:inline-flex; align-items:center; gap:.6rem;
+    font-size:.72rem; letter-spacing:.32em; text-transform:uppercase;
+    color:#456f31; font-weight:600;
+  }
+  .section-title::before, .section-title::after {
+    content:""; width:36px; height:1px;
+    background: linear-gradient(90deg,transparent,#7aa15f,transparent);
+  }
+  .timeline-dot {
+    position:absolute; left:-7px; top:6px; width:14px; height:14px; border-radius:999px;
+    background: radial-gradient(circle at 30% 30%,#c1d5b0,#365828);
+    box-shadow: 0 0 0 4px rgba(122,161,95,0.15), 0 0 12px rgba(54,88,40,0.25);
+  }
+  .btn-primary {
+    background: linear-gradient(120deg,#456f31,#365828);
+    background-size:200% 100%;
+    box-shadow: 0 8px 20px -6px rgba(54,88,40,0.35), inset 0 1px 0 rgba(255,255,255,0.15);
+    transition: background-position .5s ease, transform .2s, box-shadow .3s;
+  }
+  .btn-primary:hover { background-position: 100% 0; transform: translateY(-2px); box-shadow: 0 12px 28px -6px rgba(54,88,40,0.45); }
+  .btn-primary, .btn-primary * { color: #fbf7ee !important; }
+  .btn-ghost {
+    background: rgba(255,253,247,0.6);
+    border:1px solid rgba(107,69,39,0.3);
+    color:#365828;
+    transition: all .3s;
+  }
+  .btn-ghost:hover { background: rgba(255,253,247,0.95); border-color: rgba(107,69,39,0.55); transform: translateY(-2px); box-shadow: 0 12px 24px -8px rgba(107,69,39,0.2); }
+  .btn-ghost, .btn-ghost * { color: #2b471f !important; }
+  .project-btn {
+    display:inline-flex; align-items:center; gap:.5rem;
+    padding:.65rem 1.1rem; border-radius:.9rem;
+    font-size:.9rem; font-weight:500;
+    transition: transform .2s, box-shadow .3s, background .3s, border-color .3s;
+  }
+  .project-btn-primary {
+    background: linear-gradient(120deg,#456f31,#365828);
+    color:#fbf7ee !important;
+    box-shadow: 0 6px 18px -6px rgba(54,88,40,0.4);
+  }
+  .project-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -6px rgba(54,88,40,0.5); }
+  .project-btn-primary * { color:#fbf7ee !important; }
+  .project-btn-ghost {
+    background: rgba(255,253,247,0.6);
+    border:1px solid rgba(107,69,39,0.3);
+    color:#2b471f !important;
+  }
+  .project-btn-ghost:hover { background: rgba(255,253,247,0.95); border-color: rgba(107,69,39,0.55); transform: translateY(-2px); box-shadow: 0 10px 22px -8px rgba(107,69,39,0.2); }
+  .project-btn-ghost * { color:#2b471f !important; }
+  .progress-track { height:8px; background: rgba(107,69,39,0.10); border-radius:999px; overflow:hidden; border:1px solid rgba(107,69,39,0.06); }
+  .progress-bar { height:100%; border-radius:999px; background: linear-gradient(90deg,#7aa15f,#365828); position:relative; }
+  .progress-bar::after {
+    content:""; position:absolute; inset:0;
+    background: linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent);
+    background-size:200% 100%; animation: shine 4s linear infinite;
+  }
+  .marquee { display:flex; gap:2.5rem; width:max-content; animation: scroll 45s linear infinite; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .avatar-ring {
+    background: conic-gradient(from 180deg at 50% 50%,#365828,#7aa15f,#c69670,#8b5e3b,#365828);
+    padding:3px; border-radius:9999px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .avatar-ring > div { background: linear-gradient(135deg,#456f31 0%,#365828 40%,#6b4527 100%) !important; color: #fbf7ee !important; box-shadow: inset 0 2px 8px rgba(0,0,0,0.15); }
+  .bg-gradient-to-br.from-brand-500.to-accent-500 { background: linear-gradient(135deg,#456f31,#8b5e3b) !important; }
+  .bg-brand-500\/15, .bg-brand-500\/20 { background-color: rgba(122,161,95,0.15) !important; }
+  .bg-accent-500\/15, .bg-accent-500\/20 { background-color: rgba(198,150,112,0.18) !important; }
+  .bg-pink-500\/15, .bg-pink-500\/20 { background-color: rgba(169,122,81,0.18) !important; }
+  .bg-emerald-500\/15, .bg-emerald-500\/20 { background-color: rgba(93,141,66,0.18) !important; }
+  ::selection { background: rgba(122,161,95,0.35); color:#213717; }
+
+  /* 项目图片轮播 */
+  .carousel-wrap { position: relative; }
+  .carousel-track {
+    display: flex; gap: 12px;
+    overflow-x: auto; scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(69,111,49,0.4) transparent;
+  }
+  .carousel-track::-webkit-scrollbar { height: 6px; }
+  .carousel-track::-webkit-scrollbar-thumb { background: rgba(69,111,49,0.35); border-radius: 999px; }
+  .carousel-track::-webkit-scrollbar-track { background: rgba(107,69,39,0.05); border-radius: 999px; }
+  .carousel-slide {
+    flex: 0 0 78%; scroll-snap-align: start;
+    aspect-ratio: 16 / 10;
+    border-radius: 14px; overflow: hidden;
+    border: 1px solid rgba(107,69,39,0.14);
+    position: relative; background: #f5efe3;
+  }
+  @media (min-width: 640px) { .carousel-slide { flex: 0 0 55%; } }
+  .carousel-slide img { width: 100%; height: 100%; object-fit: cover; display:block; }
+  .carousel-slide .slide-fallback {
+    position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces',serif; font-size: 14px; color:#6b4527;
+    background: linear-gradient(135deg,#e2ecd9,#dcccae,#d9b892);
+  }
+  .carousel-btn {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 36px; height: 36px; border-radius: 999px;
+    background: rgba(255,253,247,0.95); border: 1px solid rgba(107,69,39,0.2);
+    box-shadow: 0 8px 20px -6px rgba(54,88,40,0.3);
+    display:flex; align-items:center; justify-content:center;
+    color:#365828; cursor:pointer; transition: all .2s; z-index: 2;
+  }
+  .carousel-btn:hover { background:#fff; transform: translateY(-50%) scale(1.06); }
+  .carousel-btn.prev { left: -14px; }
+  .carousel-btn.next { right: -14px; }
+  @media (max-width: 640px) { .carousel-btn.prev { left: 4px; } .carousel-btn.next { right: 4px; } }
+
+  /* 兴趣照片墙 */
+  .photo-tile {
+    position: relative; overflow: hidden; border-radius: 16px;
+    border: 1px solid rgba(107,69,39,0.14);
+    box-shadow: 0 10px 24px -14px rgba(54,88,40,0.25);
+    background: #f5efe3;
+    transition: transform .4s ease, box-shadow .3s;
+  }
+  .photo-tile:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -18px rgba(54,88,40,0.35); }
+  .photo-tile img { width: 100%; height: 100%; object-fit: cover; display:block; }
+  .photo-tile .tile-fallback {
+    display:flex; align-items:center; justify-content:center;
+    color:#6b4527; font-family:'Fraunces',serif; font-size:14px;
+    background: linear-gradient(135deg,#e2ecd9,#c1d5b0,#d9b892);
+    width:100%; height:100%;
+  }
+  .photo-tile .caption {
+    position:absolute; left:0; right:0; bottom:0;
+    padding: 10px 14px;
+    background: linear-gradient(to top, rgba(33,55,23,0.75), transparent);
+    color:#fbf7ee; font-size:13px; font-weight: 500;
+  }
+
+  /* 留言表单 */
+  .field { display:block; width:100%; padding:12px 14px; border-radius: 10px; background: rgba(255,253,247,0.7); border: 1px solid rgba(107,69,39,0.2); color:#2b471f; transition: border-color .2s, background .2s; font-family: inherit; }
+  .field:focus { outline: none; border-color:#456f31; background: #ffffff; box-shadow: 0 0 0 3px rgba(122,161,95,0.18); }
+  .field-label { display:block; font-size:12px; color:#4b4433; letter-spacing:.05em; margin-bottom:6px; font-weight:600; text-transform:uppercase; }
+
+  /* 语言切换（EN <-> 中） */
+  body.lang-en [data-i18n]:not([data-i18n=""]) { /* JS 会把这个的文字换掉 */ }
+  .lang-toggle {
+    display:inline-flex; align-items:center; gap:2px;
+    padding:3px; border-radius:999px;
+    background: rgba(122,161,95,0.10);
+    border: 1px solid rgba(69,111,49,0.25);
+    font-size:11px;
+  }
+  .lang-toggle button {
+    padding: 4px 10px; border-radius: 999px;
+    color:#4b4433; font-weight: 600; letter-spacing: .05em;
+    transition: all .2s;
+  }
+  .lang-toggle button.active { background:#365828; color:#fbf7ee; box-shadow: 0 4px 10px -2px rgba(54,88,40,0.35); }
+
+  .reveal { opacity:1; transform: none; }
+
+  /* ============ 编辑模式样式 ============ */
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+</style>
+</head>
+<body class="antialiased lang-zh">
+
+<!-- ==================== 背景装饰 ==================== -->
+<div aria-hidden="true" class="fixed inset-0 -z-10 overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-40"></div>
+  <div class="absolute -top-32 -left-32 w-[520px] h-[520px] rounded-full bg-brand-600/30 blur-3xl animate-blob"></div>
+  <div class="absolute top-40 -right-32 w-[480px] h-[480px] rounded-full bg-accent-500/25 blur-3xl animate-blob" style="animation-delay:-4s"></div>
+  <div class="absolute bottom-0 left-1/3 w-[520px] h-[520px] rounded-full bg-paper-300/40 blur-3xl animate-blob" style="animation-delay:-8s"></div>
+</div>
+
+<!-- ==================== 导航栏 ==================== -->
+<header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-6xl">
+  <nav class="glass-strong rounded-full px-3 sm:px-5 py-2.5 flex items-center justify-between gap-2">
+    <a href="#top" class="flex items-center gap-2.5 group shrink-0">
+      <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-accent-500 flex items-center justify-center font-display font-bold text-white text-sm shadow-glow">L</span>
+      <span class="font-display font-semibold text-sm px-3 py-1 rounded-full border border-brand-800/15 hidden sm:inline" style="color:#1a1a1a;background:#f5efe3;">LIAO SHUJUN</span>
+    </a>
+    <div class="hidden md:flex items-center gap-0.5 text-sm">
+      <a href="#education" data-i18n="nav-edu" class="px-3 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-brand-500/10 transition">教育</a>
+      <a href="#experience" data-i18n="nav-exp" class="px-3 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-brand-500/10 transition">经历</a>
+      <a href="#projects" data-i18n="nav-prj" class="px-3 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-brand-500/10 transition">项目</a>
+      <a href="#skills" data-i18n="nav-skl" class="px-3 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-brand-500/10 transition">技能</a>
+      <a href="#interests" data-i18n="nav-int" class="px-3 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-brand-500/10 transition">兴趣</a>
+      <a href="#contact" data-i18n="nav-cnt" class="px-3 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-brand-500/10 transition">联系</a>
+      <a href="#message" data-i18n="nav-msg" class="px-3 py-1.5 rounded-full text-slate-300 hover:text-white hover:bg-brand-500/10 transition">留言</a>
+    </div>
+    <div class="flex items-center gap-2">
+      <a href="#contact" class="btn-primary text-sm font-medium px-4 py-2 rounded-full shadow-soft whitespace-nowrap">联系我 →</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ==================== M1 · HERO ==================== -->
+<section id="top" class="relative min-h-screen flex items-center pt-28 pb-20 px-6">
+  <div class="max-w-6xl mx-auto w-full grid md:grid-cols-[1.2fr_1fr] gap-14 items-center relative">
+
+    <div>
+      <div class="chip mb-6">
+        <span class="dot"></span>
+        <span>2027届应届生 · 秋招求职中</span>
+      </div>
+      <h1 class="font-display font-black leading-[1.05] text-5xl sm:text-6xl lg:text-7xl">
+        <span>Hi~ 我是</span><br>
+        <span class="gradient-text">廖淑君</span>
+      </h1>
+      <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-xl leading-relaxed">
+  数据敏感型的运营分析候选人，擅长从数据切入看问题，拆成可执行策略；熟练掌握英语，意向出海或国际化业务的策略/用户/活动营销类岗位。
+      </p>
+    </div>
+
+    <!-- 头像信息卡 -->
+    <div class="relative">
+      <div class="absolute -inset-4 bg-gradient-to-br from-brand-500/20 via-accent-500/15 to-paper-300/40 blur-2xl rounded-3xl"></div>
+      <div class="glass-strong relative rounded-3xl p-8 shadow-soft">
+        <div class="flex items-center gap-5">
+          <div class="avatar-ring">
+            <div class="w-24 h-24 rounded-full flex items-center justify-center font-display font-black text-4xl overflow-hidden bg-brand-500/10">
+              <img src="images/avatar.jpg" alt="廖淑君" class="w-full h-full object-cover" onerror="this.style.display='none';this.parentNode.querySelector('.avatar-fallback').style.display='inline';">
+              <span class="avatar-fallback" style="display:none;">Jun</span>
+            </div>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold text-white">廖淑君</div>
+            <div class="text-slate-400 text-sm mt-1">2027届 应届生</div>
+            <div class="mt-2 inline-flex items-center gap-1.5 text-xs text-emerald-300">
+              <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span>求职中</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-7 space-y-3 text-sm">
+          <div class="flex items-center gap-3 text-slate-300">
+            <span class="w-8 h-8 rounded-lg bg-brand-500/15 flex items-center justify-center text-brand-300">📍</span>
+            <span>城市意向：深圳、广州、香港、杭州、上海</span>
+          </div>
+          <div class="flex items-center gap-3 text-slate-300">
+            <span class="w-8 h-8 rounded-lg bg-accent-500/15 flex items-center justify-center text-accent-400">💼</span>
+            <span>意向岗位：出海 / 国际化业务</span>
+          </div>
+          <div class="flex items-center gap-3 text-slate-300">
+            <span class="w-8 h-8 rounded-lg bg-pink-500/15 flex items-center justify-center text-pink-300">🎓</span>
+            <span>应届：2026 秋招求职中</span>
+          </div>
+          <div class="flex items-center gap-3 text-slate-300">
+            <span class="w-8 h-8 rounded-lg bg-emerald-500/15 flex items-center justify-center text-emerald-300">✉️</span>
+            <span>Junshukkwan@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="mt-7 flex flex-wrap gap-2">
+          <span class="chip">#数据分析</span>
+          <span class="chip">#策略中台</span>
+          <span class="chip">#互联网运营</span>
+          <span class="chip">#出海</span>
+          <span class="chip">#ENTJ</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-slate-500 text-xs flex flex-col items-center gap-2">
+    <span data-i18n="scroll">向下滚动</span>
+    <span class="w-px h-8 bg-gradient-to-b from-slate-500 to-transparent"></span>
+  </div>
+</section>
+
+<!-- ==================== M7 · Education（上移） ==================== -->
+<section id="education" class="pt-10 pb-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="section-title mb-4" data-i18n="edu-eyebrow">Education</div>
+    <h2 class="font-display text-4xl sm:text-5xl font-bold text-white max-w-3xl leading-tight">
+      教育背景
+    </h2>
+
+    <div class="mt-14 grid md:grid-cols-2 gap-5">
+      <!-- ★ 教育卡片模板：复制整个 <div class="glass ...">...</div> 可新增 -->
+      <div class="glass rounded-2xl p-7 card-hover">
+        <div class="flex items-center justify-between">
+          <div class="font-display text-lg font-semibold text-white">香港大学 · 硕士</div>
+          <span class="text-slate-400 text-sm">2025.08 – 2027.06</span>
+        </div>
+        <div class="text-brand-300 text-sm mt-1">商业分析 (方向：AI人工智能)</div>
+        <ul class="mt-4 space-y-1.5 text-slate-400 text-sm list-disc pl-5 marker:text-brand-400">
+          <li>GPA：3.86/4.30 (排名 Top 20%)</li>
+          <li>核心课程：大数据分析、时间序列、机器学习、深度学习</li>
+          <li>荣誉：2025/2026 Merit-Based Scholarship</li>
+        </ul>
+      </div>
+      <div class="glass rounded-2xl p-7 card-hover">
+        <div class="flex items-center justify-between">
+          <div class="font-display text-lg font-semibold text-white">澳门大学 · 本科</div>
+          <span class="text-slate-400 text-sm">2021.08 – 2025.06</span>
+        </div>
+        <div class="text-accent-400 text-sm mt-1">国际综合度假村管理 (方向：会展与服务业管理)</div>
+        <ul class="mt-4 space-y-1.5 text-slate-400 text-sm list-disc pl-5 marker:text-accent-400">
+          <li>GPA：3.79/4.00 (排名 1/59)</li>
+          <li>核心课程：旅游经济学、活动营销与策划、服务质量管理</li>
+          <li>荣誉：2024/2025中国银行学术奖项、3份校级奖学金、2份院级奖学金</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== M4 · Experience（5 段） ==================== -->
+<section id="experience" class="pt-10 pb-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="section-title mb-4" data-i18n="exp-eyebrow">Experience</div>
+    <h2 class="font-display text-4xl sm:text-5xl font-bold text-white max-w-3xl leading-tight">
+      实习经历
+    </h2>
+
+    <div class="mt-14 relative pl-8 border-l border-brand-800/15 space-y-10">
+
+      <!-- ★ 经历卡片模板：复制整个 <div class="relative">...</div> 可新增一段 -->
+      <div class="relative">
+        <span class="timeline-dot"></span>
+        <div class="glass rounded-2xl p-6 sm:p-8 card-hover">
+          <div class="flex flex-wrap items-baseline gap-3">
+            <h3 class="font-display text-xl font-semibold text-white">字节跳动</h3>
+            <span class="text-slate-400 text-sm">2026.06 – 至今</span>
+          </div>
+          <div class="text-brand-300 text-sm mt-1">Tiktok LIVE · SEA/CCA 内容活动策略中台</div>
+          <ul class="mt-4 space-y-2 text-slate-300 text-sm leading-relaxed list-disc pl-5 marker:text-brand-400">
+            <li>【负向内容治理】：负责负向治理数据体系搭建，独⽴落地「处罚来源监控看板」「公会治理看板」等治理⼯具，利用多维表格独立产出「高营收主播问题闭环机制」产品，⽇常⽀持负向 case 诊断分析与治理复盘；</li>
+            <li>【AI 运用】：运⽤ AI Agent 完成 20+ 重点团播账号内容拆解，产出区域运营洞察与账号调优建议，并针对流量下滑主播问题输出多项专项归因诊断报告，沉淀标准化分析 Prompt 为团队可复⽤资产；</li>
+            <li>【活动运营】：承接主播教育活动配置与相关素材⽀援，协同区域运营推进活动落地，完成活动复盘；</li>
+            <li>【数据分析】：承接中台团队数据以及看板基建需求，⽀撑业务周会经营分析与区域运营决策；运用 AI agent 辅助搭建数据机器人，提高团队数据分析工作效率。</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="chip">#BI工具看板搭建</span>
+            <span class="chip">#AI运用</span>
+            <span class="chip">#内容策略分析</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <span class="timeline-dot"></span>
+        <div class="glass rounded-2xl p-6 sm:p-8 card-hover">
+          <div class="flex flex-wrap items-baseline gap-3">
+            <h3 class="font-display text-xl font-semibold text-white">美团</h3>
+            <span class="text-slate-400 text-sm">2025.11 – 2026.02</span>
+          </div>
+          <div class="text-brand-300 text-sm mt-1">Keeta香港 · 企业服务部 / ToB用户运营</div>
+          <ul class="mt-4 space-y-2 text-slate-300 text-sm leading-relaxed list-disc pl-5 marker:text-brand-400">
+            <li>【售后运营】：对接 10+ ⾹港重点企业客户，负责客户订单管理、需求响应异常处理，推动问题从反馈收集到内部协同解决；</li>
+            <li>【订单管理】：基于客户个性化团单业务诉求梳理定制化订单解决⽅案，协同 BD、配送团队推进需求落地，提升重点客户服务体验与业务本地化落地效果；</li>
+            <li>【数据运营】：定期汇总客户反馈与订单数据，输出问题复盘与产品优化建议，助⼒ Keeta ⾹港企业服务业务本地化落地</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="chip">#出海</span>
+            <span class="chip">#售后运营</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <span class="timeline-dot"></span>
+        <div class="glass rounded-2xl p-6 sm:p-8 card-hover">
+          <div class="flex flex-wrap items-baseline gap-3">
+            <h3 class="font-display text-xl font-semibold text-white">万豪国际有限公司<br></h3>
+            <span class="text-slate-400 text-sm">2026.03 – 2026.06</span>
+          </div>
+          <div class="text-brand-300 text-sm mt-1">大中华区战略规划部 · 咨询项目管理</div>
+          <ul class="mt-4 space-y-2 text-slate-300 text-sm leading-relaxed list-disc pl-5 marker:text-brand-400">
+            <li>【项目管理】：⽀持集团⼤中华区业务转型与落地，负责项⽬流程进度跟踪、跨部门信息同步，保障项⽬按节奏⾼效推进；</li>
+            <li>【数据可视化】：维护集团内部项⽬管理平台，实时同步项⽬执⾏数据与团队需求；熟练使⽤ Land-it、Smartsheet 完成数据汇总
+与进度可视化，为管理层决策提供数据⽀撑；</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="chip">#咨询</span>
+            <span class="chip">#酒店业</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <span class="timeline-dot"></span>
+        <div class="glass rounded-2xl p-6 sm:p-8 card-hover">
+          <div class="flex flex-wrap items-baseline gap-3">
+            <h3 class="font-display text-xl font-semibold text-white">弗若斯特沙利文全球增长咨询公司</h3>
+            <span class="text-slate-400 text-sm">2025.10 – 2026.03</span>
+          </div>
+          <div class="text-brand-300 text-sm mt-1">IPO组 · 咨询助理PTA (远程)</div>
+          <ul class="mt-4 space-y-2 text-slate-300 text-sm leading-relaxed list-disc pl-5 marker:text-brand-400">
+            <li>参与多⾏业 IPO 咨询项⽬，独⽴完成⾏业市场规模测算、产业链分析与竞争格局梳理， 通过⼀⼿访谈与⼆⼿数据交叉验证完成定量定性分析，为招股书⾏业报告提供核⼼数据与观点⽀撑；</li>
+            <li>针对美妆企业绿⾊孵化器选址项⽬的可持续业务拓展需求，完成国内孵化器现状调研与选址策略建议撰写，为客户业务拓展提供关键决策⽀撑。</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="chip">#咨询</span>
+            <span class="chip">#竞争分析</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <span class="timeline-dot"></span>
+        <div class="glass rounded-2xl p-6 sm:p-8 card-hover">
+          <div class="flex flex-wrap items-baseline gap-3">
+            <h3 class="font-display text-xl font-semibold text-white">澳门威尼斯人有限公司</h3>
+            <span class="text-slate-400 text-sm">2024.06 – 2024.11</span>
+          </div>
+          <div class="text-brand-300 text-sm mt-1">采购及供应链管理 · 买手(品类：场外服务)</div>
+          <ul class="mt-4 space-y-2 text-slate-300 text-sm leading-relaxed list-disc pl-5 marker:text-brand-400">
+            <li>负责场外服务类采购，覆盖活动安保、清洁、租约等服务品类，独立完成10余份社会捐献相关的采购项目；</li>
+            <li>通过 Ariba 系统管理服务类合同条款、开展供应商第三方尽职调查，保障服务交付质量与成本可控；</li>
+            <li>制作三方报价对比表、监管投标流程，对接供需双方需求，协调服务落地细节，确保活动配套服务零差错。</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="chip">#买手</span>
+            <span class="chip">#酒店业</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== M5 · Projects（2 张 + 图片轮播） ==================== -->
+<section id="projects" class="pt-10 pb-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="section-title mb-4" data-i18n="prj-eyebrow">Projects</div>
+    <h2 class="font-display text-4xl sm:text-5xl font-bold text-white max-w-3xl leading-tight">
+      项目作品
+    </h2>
+
+    <div class="mt-14 grid gap-6">
+      <!-- ★ 项目卡模板：复制 <article>...</article> 可新增卡片 -->
+      <article class="glass rounded-2xl p-6 sm:p-7 card-hover">
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-slate-500 uppercase tracking-widest">Case 01</span>
+          <span class="text-xs text-slate-500">2026 · AI产品 x 零售业</span>
+        </div>
+        <h3 class="mt-4 font-display text-2xl font-semibold text-white">微软香港 x 香港大学合作项目：
+Microsoft 365 Copilot 的零售运营转型与 AI 原型优化</h3>
+        <p class="mt-3 text-slate-400 text-sm leading-relaxed">【项目描述】
+基于微软的AI产品Copilot，开展屈臣氏的零售调研流程数字化改造，我们团队负责问卷设计模块的产品设计。
+我们梳理原有问卷设计流程并重构全流程，实现运营效率提升，优化AI解析机制，搭建多级审批评论体系，按照企业合规标准完成原型迭代，为屈臣氏客户内部开发提供完整的产品依据。<br></p>
+
+        <!-- 项目资料入口 -->
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="files/项目一-微软最终报告.pdf" target="_blank" rel="noopener" class="project-btn project-btn-primary">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span>查看项目最终报告 PDF</span>
+          </a>
+        </div>
+
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="chip">#零售</span>
+          <span class="chip">#流程优化</span>
+          <span class="chip">#AI产品设计</span>
+        </div>
+      </article>
+
+      <article class="glass rounded-2xl p-6 sm:p-7 card-hover">
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-slate-500 uppercase tracking-widest">Case 02</span>
+          <span class="text-xs text-slate-500">2026 · AI产品 x 达人营销</span>
+        </div>
+        <h3 class="mt-4 font-display text-2xl font-semibold text-white">2026 AI 先锋未来人才大赛：
+影石 Insta360 全球达人营销解决方案</h3>
+        <p class="mt-3 text-slate-400 text-sm leading-relaxed">【项目描述】
+面向影石 Insta360 全球达人营销场景，提出 AI 驱动的达人发现、智能匹配、本地化 brief 生成与营销复盘方案，并完成项目框架设计与 Demo 验证。<br></p>
+
+        <!-- 项目资料入口 -->
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="files/项目二-开题报告.pdf" target="_blank" rel="noopener" class="project-btn project-btn-primary">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span>查看开题报告 PDF</span>
+          </a>
+          <a href="https://insta360-demo-d8gq78tf59c828021-1455300381.tcloudbaseapp.com/" target="_blank" rel="noopener" class="project-btn project-btn-ghost">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <span>项目原型 / Demo</span>
+          </a>
+        </div>
+
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="chip">#出海</span>
+          <span class="chip">#AI运营</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== M6 · Campus & Skills ==================== -->
+<section id="skills" class="pt-10 pb-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-10 items-stretch">
+      <!-- 左侧：校园经历 -->
+      <div class="flex flex-col">
+        <div class="section-title mb-4" data-i18n="cmp-eyebrow">Campus Experience</div>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-white leading-tight">
+          校园经历
+        </h2>
+
+        <div class="mt-10 space-y-6 flex-1 flex flex-col">
+          <div class="glass rounded-2xl p-6 sm:p-7 card-hover flex-1">
+            <div class="flex flex-wrap items-baseline gap-3">
+              <h3 class="font-display text-xl font-semibold text-white">澳门大学 · 郑裕彤书院</h3>
+              <span class="text-slate-400 text-sm">2022.01 – 2024.01</span>
+            </div>
+            <div class="text-brand-300 text-sm mt-1">社区服务组 组长</div>
+            <ul class="mt-4 space-y-2 text-slate-300 text-sm leading-relaxed list-disc pl-5 marker:text-brand-400">
+              <li>统筹策划 10 余场社区特殊人群共融活动，单场参与人数超 100 人，负责活动全流程策划、宣传推广、现场执行；</li>
+              <li>对接澳门多家福利机构与社会组织，搭建稳定的澳门本土机构合作资源网络；</li>
+              <li>荣获郑裕彤书院贡献奖学金、澳门大学书院奖学金。</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="chip">#领导力</span>
+              <span class="chip">#志愿者</span>
+            </div>
+          </div>
+
+          <div class="glass rounded-2xl p-6 sm:p-7 card-hover flex-1">
+            <div class="flex flex-wrap items-baseline gap-3">
+              <h3 class="font-display text-xl font-semibold text-white">活动策划：环球趣游・旅行目的地推广嘉年华</h3>
+            </div>
+            <div class="text-brand-300 text-sm mt-1">赞助 &amp; 摊位活动负责人</div>
+            <ul class="mt-4 space-y-2 text-slate-300 text-sm leading-relaxed list-disc pl-5 marker:text-brand-400">
+              <li>独立完成食品类赞助商拓展，定制赞助合作方案，成功引入 2 家本地食品商家赞助，降低活动物料成本 50%；</li>
+              <li>全权负责小吃摊位全案设计与运营，包含视觉规划、互动玩法设计、产品定价策略、现场活动执行；</li>
+              <li>统筹活动现场落地与人员分工，联动团队完成宣传引流、现场控场、秩序维护，活动参与人数超 500 人，在有赞助支持下实现盈利 1000+ 澳门币，完成校园活动商业闭环。</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="chip">#活动策划</span>
+              <span class="chip">#赞助</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右侧：能力图谱 -->
+      <div class="flex flex-col">
+        <div class="section-title mb-4" data-i18n="skl-eyebrow">Skills</div>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-white leading-tight">
+          技能
+        </h2>
+
+        <div class="mt-10 flex-1 flex flex-col">
+          <div class="glass rounded-2xl p-7 flex-1 flex flex-col">
+            <h3 class="font-display text-lg font-semibold text-white mb-6">技能 / 工具</h3>
+            <div class="grid grid-cols-2 gap-3 text-sm">
+              <div class="glass rounded-xl p-4 card-hover"><div class="text-white font-medium">技能</div><div class="text-slate-400 text-xs mt-1">熟练掌握SQL/Python/R</div></div>
+              <div class="glass rounded-xl p-4 card-hover"><div class="text-white font-medium">BI工具</div><div class="text-slate-400 text-xs mt-1">熟练使用风神Aelous搭建看板</div></div>
+              <div class="glass rounded-xl p-4 card-hover"><div class="text-white font-medium">项目管理</div><div class="text-slate-400 text-xs mt-1">Smartsheet、Land-it</div></div>
+              <div class="glass rounded-xl p-4 card-hover"><div class="text-white font-medium">其他</div><div class="text-slate-400 text-xs mt-1">Ariba采购系统、Microsoft Office</div></div>
+            </div>
+
+            <h3 class="font-display text-lg font-semibold text-white mt-8 mb-4" data-i18n="skl-lang">语言</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">英语 · 熟练 (雅思7.0) </span>
+              <span class="chip">粤语 · 母语</span>
+              <span class="chip">普通话 · 母语</span>
+            </div>
+
+            <h3 class="font-display text-lg font-semibold text-white mt-8 mb-4">补充信息</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">🇭🇰 香港 IANG 签证（无条件工作签，工作地点可 base 香港）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 新增：兴趣 & 生活（照片墙） ==================== -->
+<section id="interests" class="pt-10 pb-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="section-title mb-4" data-i18n="int-eyebrow">Interests &amp; Life</div>
+    <h2 class="font-display text-4xl sm:text-5xl font-bold text-white max-w-3xl leading-tight">
+      <span class="gradient-text">我</span>
+    </h2>
+    <p class="mt-4 text-slate-400 max-w-2xl">
+      廖淑君的其他形态...
+    </p>
+
+    <!-- 照片格子，双击编辑标题 -->
+    <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="photo-tile aspect-square">
+        <img src="images/interest-1.jpg" alt="兴趣 1" class="w-full h-full object-cover" loading="lazy">
+        <div class="caption">澳大期间去老人院做共融活动 · 01</div>
+      </div>
+      <div class="photo-tile aspect-square">
+        <img src="images/interest-2.jpg" alt="兴趣 2" class="w-full h-full object-cover" loading="lazy">
+        <div class="caption">澳大毕业 收获很大的四年 非常感恩 · 02</div>
+      </div>
+      <div class="photo-tile aspect-square">
+        <img src="images/interest-3.jpg" alt="兴趣 3" class="w-full h-full object-cover" loading="lazy">
+        <div class="caption">酒酒酒alcohol · 03</div>
+      </div>
+      <div class="photo-tile aspect-square">
+        <img src="images/interest-4.jpg" alt="兴趣 4" class="w-full h-full object-cover" loading="lazy">
+        <div class="caption">上课实习两手抓的时候就这样... · 04</div>
+      </div>
+      <div class="photo-tile aspect-square">
+        <img src="images/interest-5.jpg" alt="兴趣 5" class="w-full h-full object-cover" loading="lazy">
+        <div class="caption">探索地球 · 05</div>
+      </div>
+      <div class="photo-tile aspect-square">
+        <img src="images/interest-6.jpg" alt="兴趣 6" class="w-full h-full object-cover" loading="lazy">
+        <div class="caption">徒步登顶稻城亚丁 也是热爱运动的女子一枚 · 06</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== M8 · Contact ==================== -->
+<section id="contact" class="pt-10 pb-12 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="glass-strong rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+      <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-brand-500/20 blur-3xl"></div>
+      <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-accent-500/15 blur-3xl"></div>
+
+      <div class="relative">
+        <div class="section-title mb-4" data-i18n="cnt-eyebrow">Let's Talk</div>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-white leading-tight">
+  Contact 联系方式
+        </h2>
+        <p class="mt-6 text-slate-300 max-w-2xl leading-relaxed">
+          欢迎随时联系我，我会常看 inbox，接电话～
+        </p>
+
+        <div class="mt-10 grid sm:grid-cols-2 gap-4">
+          <div class="glass rounded-2xl p-5 card-hover flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-brand-500/20 text-brand-300 flex items-center justify-center text-xl">✉️</div>
+            <div>
+              <div class="text-slate-400 text-xs uppercase tracking-widest">Email</div>
+              <div class="text-white font-medium">Junshukkwan@gmail.com</div>
+            </div>
+          </div>
+          <div class="glass rounded-2xl p-5 card-hover flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-500/20 text-accent-400 flex items-center justify-center text-xl shrink-0">📱</div>
+            <div class="flex-1 min-w-0">
+              <div class="text-slate-400 text-xs uppercase tracking-widest mb-1.5">Phone</div>
+              <div class="text-white font-medium text-sm block leading-tight">内地 · +86 15768383778</div>
+              <div class="text-white font-medium text-sm block leading-tight mt-0.5">香港 · +852 6584-0501</div>
+            </div>
+          </div>
+          <div class="glass rounded-2xl p-5 card-hover flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/20 text-pink-300 flex items-center justify-center text-xl shrink-0">💼</div>
+            <div class="min-w-0">
+              <div class="text-slate-400 text-xs uppercase tracking-widest">LinkedIn</div>
+              <div class="text-white font-medium text-xs whitespace-nowrap overflow-hidden" style="text-overflow:ellipsis;" title="www.linkedin.com/in/shujun-liao-8789b729a/">www.linkedin.com/in/shujun-liao-8789b729a/</div>
+            </div>
+          </div>
+          <div class="glass rounded-2xl p-5 card-hover flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center text-xl">💬</div>
+            <div>
+              <div class="text-slate-400 text-xs uppercase tracking-widest">WeChat</div>
+              <div class="text-white font-medium">Junshukkwan</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 简历下载 + 邮件 CTA -->
+        <div class="mt-10 flex flex-wrap gap-3">
+          <a href="mailto:your.email@example.com" class="btn-ghost font-medium px-6 py-3 rounded-xl inline-flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            <span data-i18n="cnt-mailme">发起邮件</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 新增：访客留言表单（移到最底部） ==================== -->
+<section id="message" class="pt-10 pb-24 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="glass-strong rounded-3xl p-8 sm:p-12">
+      <div class="section-title mb-4" data-i18n="msg-eyebrow">Leave a Message</div>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold text-white leading-tight">
+        留言 ✍️
+      </h2>
+      <p class="mt-4 text-slate-400 max-w-2xl">
+        如果你是招聘方 / 同学 / 朋友，欢迎在这里留言。
+      </p>
+
+      <form id="msgForm" class="mt-8 grid sm:grid-cols-2 gap-4" novalidate="">
+        <div>
+          <label class="field-label" data-i18n="form-name">姓名</label>
+          <input class="field" name="name" placeholder="你的姓名 / Name" required="">
+        </div>
+        <div>
+          <label class="field-label" data-i18n="form-contact">联系方式（邮箱 / 微信）</label>
+          <input class="field" name="contact" placeholder="邮箱 / WeChat" required="">
+        </div>
+        <div class="sm:col-span-2">
+          <label class="field-label" data-i18n="form-org">公司 / 学校（可选）</label>
+          <input class="field" name="org" placeholder="Company or School">
+        </div>
+        <div class="sm:col-span-2">
+          <label class="field-label" data-i18n="form-msg">留言内容</label>
+          <textarea class="field" name="message" rows="5" placeholder="想聊聊什么？岗位、合作、交流都可以…" required=""></textarea>
+        </div>
+        <div class="sm:col-span-2 flex flex-wrap items-center gap-3">
+          <button type="submit" class="btn-primary font-medium px-6 py-3 rounded-xl inline-flex items-center gap-2">
+            <span data-i18n="form-send">发送留言</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </button>
+        </div>
+      </form>
+      <div id="msgStatus" class="mt-4 text-sm hidden"></div>
+
+      <!-- 飞书表单占位（编辑模式下把注释里的 iframe 打开即可） -->
+      <!--
+      ★ 想接入飞书表单：
+        1. 在飞书里新建一个"表单"应用；
+        2. 点"发布 > 复制嵌入代码"，把下面这段替换：
+        <iframe src="你的飞书表单嵌入 URL" width="100%" height="640" frameborder="0" style="border-radius:16px;border:1px solid rgba(107,69,39,0.16);"></iframe>
+        3. 然后把上面 <form>...</form> 整块删掉即可。
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer class="py-10 px-6 border-t border-brand-800/10">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+    <div class="flex items-center gap-2">
+      <span class="w-6 h-6 rounded-md bg-gradient-to-br from-brand-500 to-accent-500 flex items-center justify-center font-display font-bold text-white text-xs">L</span>
+      <span>© 廖淑君 · Jun LIAO</span>
+    </div>
+    <a href="#top" class="hover:text-brand-700 transition" data-i18n="back-top">回到顶部 ↑</a>
+  </div>
+</footer>
+
+<!-- ==================== Editor removed (production build) ==================== -->
+
+<script>
+  /* ---------- 语言切换（中 / EN） ---------- */
+  const i18n = {
+    zh: {
+      'nav-edu':'教育','nav-exp':'经历','nav-prj':'项目','nav-skl':'技能','nav-int':'兴趣','nav-msg':'留言','nav-cnt':'联系',
+      'nav-cta':'联系我 →','scroll':'向下滚动','back-top':'回到顶部 ↑',
+      'edu-eyebrow':'Education','exp-eyebrow':'Experience','prj-eyebrow':'Projects','skl-eyebrow':'Skills',
+      'int-eyebrow':'Interests & Life','msg-eyebrow':'Leave a Message','cnt-eyebrow':"Let's Talk",
+      'skl-group1':'技术工具','skl-group2':'业务方法论 / 领域','skl-lang':'语言',
+      'form-name':'姓名','form-contact':'联系方式（邮箱 / 微信）','form-org':'公司 / 学校（可选）',
+      'form-msg':'留言内容','form-send':'发送留言',
+      'form-hint':'💡 当前会通过你的默认邮件客户端发送到收件邮箱；后续可替换成飞书表单嵌入。',
+      'cnt-resume':'下载简历（PDF）','cnt-mailme':'发起邮件',
+    },
+    en: {
+      'nav-edu':'Education','nav-exp':'Experience','nav-prj':'Projects','nav-skl':'Skills','nav-int':'Interests','nav-msg':'Message','nav-cnt':'Contact',
+      'nav-cta':'Contact Me →','scroll':'Scroll','back-top':'Back to top ↑',
+      'edu-eyebrow':'Education','exp-eyebrow':'Experience','prj-eyebrow':'Projects','skl-eyebrow':'Skills',
+      'int-eyebrow':'Interests & Life','msg-eyebrow':'Leave a Message','cnt-eyebrow':"Let's Talk",
+      'skl-group1':'Tools & Stack','skl-group2':'Methodology / Domain','skl-lang':'Languages',
+      'form-name':'Name','form-contact':'Contact (Email / WeChat)','form-org':'Company / School (optional)',
+      'form-msg':'Message','form-send':'Send Message',
+      'form-hint':'💡 This form opens your default mail client. You can later swap it with a Feishu form embed.',
+      'cnt-resume':'Download Resume (PDF)','cnt-mailme':'Send an Email',
+    }
+  };
+  const langZhBtn = document.getElementById('langZh');
+  const langEnBtn = document.getElementById('langEn');
+  function applyLang(lang) {
+    if (!langZhBtn && !langEnBtn) return;
+    document.documentElement.setAttribute('lang', lang === 'en' ? 'en' : 'zh-CN');
+    document.body.classList.toggle('lang-en', lang === 'en');
+    document.body.classList.toggle('lang-zh', lang !== 'en');
+    const dict = i18n[lang] || i18n.zh;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      if (dict[key] !== undefined) el.textContent = dict[key];
+    });
+    langZhBtn.classList.toggle('active', lang === 'zh');
+    langEnBtn.classList.toggle('active', lang === 'en');
+    try { localStorage.setItem('site-lang', lang); } catch(e) {}
+  }
+  langZhBtn?.addEventListener('click', () => applyLang('zh'));
+  langEnBtn?.addEventListener('click', () => applyLang('en'));
+  if (langZhBtn || langEnBtn) applyLang(localStorage.getItem('site-lang') || 'zh');
+
+  /* ---------- 项目图片轮播控制 ---------- */
+  document.querySelectorAll('.carousel-wrap').forEach(wrap => {
+    const track = wrap.querySelector('.carousel-track');
+    const prev = wrap.querySelector('.carousel-btn.prev');
+    const next = wrap.querySelector('.carousel-btn.next');
+    const step = () => (track.querySelector('.carousel-slide')?.offsetWidth || 300) + 12;
+    prev?.addEventListener('click', () => track.scrollBy({ left: -step(), behavior:'smooth' }));
+    next?.addEventListener('click', () => track.scrollBy({ left:  step(), behavior:'smooth' }));
+  });
+
+  /* ---------- 留言表单：mailto: 兜底 ---------- */
+  const msgForm = document.getElementById('msgForm');
+  const msgStatus = document.getElementById('msgStatus');
+  msgForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(msgForm);
+    const name    = (data.get('name')||'').trim();
+    const contact = (data.get('contact')||'').trim();
+    const org     = (data.get('org')||'').trim();
+    const message = (data.get('message')||'').trim();
+    if (!name || !contact || !message) {
+      msgStatus.className = 'mt-4 text-sm';
+      msgStatus.textContent = '请把姓名、联系方式和留言内容填一下哦～';
+      msgStatus.style.color = '#8b5e3b';
+      return;
+    }
+    // 找收件邮箱：先从 form-hint 里的可编辑 span 抓，兜底用 example
+    const to = (document.querySelector('#contact .glass:nth-child(1) .text-white')?.textContent?.trim() || 'your.email@example.com');
+    const subject = encodeURIComponent(`【个人网站留言】来自 ${name}`);
+    const body = encodeURIComponent(
+      `姓名：${name}\n联系方式：${contact}\n公司/学校：${org || '（未填写）'}\n\n留言：\n${message}`
+    );
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    msgStatus.className = 'mt-4 text-sm';
+    msgStatus.textContent = '✅ 已尝试打开邮件客户端，请点击发送。';
+    msgStatus.style.color = '#365828';
+  });
+</script>
+
+
+
+</body></html>
