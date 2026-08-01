@@ -1,0 +1,22 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+
+# PDF：浏览器内直接预览 + 缓存 7 天，重复访问秒开
+[[headers]]
+  for = "/files/*.pdf"
+  [headers.values]
+    Content-Disposition = "inline"
+    Cache-Control = "public, max-age=604800, immutable"
+
+# 图片：缓存 30 天，减少重复加载耗时
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, immutable"
